@@ -29,11 +29,10 @@ export default function CustomCursor() {
   }, [])
 
   return (
-    <div className={`fixed top-0 left-0 pointer-events-none z-50 rounded-full
+    <div className={`hidden lg:block fixed top-0 left-0 pointer-events-none z-50 rounded-full
         transition-transform duration-75 ease-out
         ${hovering ? "w-12 h-12 bg-indigo-500/50" : "w-6 h-6 bg-indigo-accent"}`}
-        style={{transform: `translate3d(${position.x}px, ${position.y}px, 0) translate(-50%, -50%)`,
-      }}
+        style={{transform: `translate3d(${position.x}px, ${position.y}px, 0) translate(-50%, -50%)`}}
     />
   )
 }

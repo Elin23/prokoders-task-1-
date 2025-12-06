@@ -7,6 +7,9 @@ import cup from "../assets/icons/cup.svg";
 import users from "../assets/imgs/users.png";
 
 function Hero() {
+    const handleClick = () => {
+    console.log("CTA clicked");
+  };
   return (
     <div className="relative  lg:min-h-[calc(100vh-24vh)] flex flex-col lg:flex-row justify-between px-4 sm:px-6 md:px-16 lg:px-[90px] mt-8 sm:mt-10 lg:mt-[58px] gap-12 lg:gap-0">
 
@@ -25,10 +28,10 @@ function Hero() {
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-5 justify-center lg:justify-start">
-          <ButtonComponent label="Get Started"
+          <ButtonComponent label="Get Started" onClick={handleClick}
             className="relative overflow-hidden bg-[linear-gradient(to_right,#6366F1,#3B82F6)] text-white px-7 py-3 shadow-lg shadow-indigo-500/30 transition-all duration-500 hover:brightness-110 before:absolute before:inset-0 before:bg-linear-to-r before:from-white/10 before:to-transparent before:-translate-x-full before:skew-x-12 hover:before:translate-x-[200%] before:transition-all before:duration-700"
           />
-          <ButtonComponent label="Watch Demo"
+          <ButtonComponent label="Watch Demo" onClick={handleClick}
             className="px-7 py-3 text-slate-dark border border-slate-light transition-all duration-300 hover:text-indigo-600 hover:border-indigo-400 hover:shadow-lg hover:shadow-indigo-300/30"
           />
         </div>

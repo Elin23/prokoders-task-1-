@@ -22,8 +22,8 @@ Follow these steps to set up and run the project locally:
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repo-url>
-cd <your-repo-folder>
+git clone https://github.com/Elin23/prokoders-task-1-
+cd task-1
 ```
 ### 2. Install dependencies
 ```bash
